@@ -10,6 +10,7 @@
  :root {
      --primary-color: rgb(64, 192, 214);
      --secondary-color:rgba(199,102,1,1);
+     --text-stroke: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
  } 
 
 body{
@@ -52,6 +53,7 @@ ul {
 .logo-text-p2 {
     font-size: 1.7em;
     margin-left: -60px;
+    text-shadow:var(--text-stroke);
     color: var(--secondary-color);
 }
 
@@ -95,8 +97,8 @@ ul {
 }
 .main-container {
     font-size: 1.2em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    
+    text-shadow: var(--text-stroke);
+    overflow:hidden;
 }
 
 .main-middle-container {
@@ -158,6 +160,10 @@ ul {
 .game-mode-selector-list a {
     text-decoration: none;
     color: white;
+}
+
+.lowerclouds {
+    margin-bottom:-4px;
 }
 
 
