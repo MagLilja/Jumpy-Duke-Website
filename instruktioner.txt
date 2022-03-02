@@ -1,0 +1,56 @@
+Deadline: Måndag 21/3 2022 kl. 20:00
+Målet med denna inlämningsuppgift är att du skall skapa HTML-sidor (eller återanvända de från förra
+inlämningen) och stilsätta dem med CSS.
+
+Alla HTML-element ska användas på ett semantiskt korrekt vis. 
+CSS-klasser och element skall vara namngivna på ett bra sätt.
+All CSS skall finnas i en CSS-fil som inkluderas till samtliga HTML-dokument.
+
+Följande egenskaper skall användas för att ge stil till något (variantformer är ok): 
+background, 
+border, 
+color,
+font, 
+margin, 
+- overflow, 
+padding, 
+position 
+och text-transform.
+
+Det skall finnas minst ett element med 
+en färgbakgrund och en med 
+en bildbakgrund.
+
+Både 
+id- och 
+klass-selektorer skall användas.
+
+Flexbox skall användas för att skapa layout på ett vis där flexbox passar.
+
+Minst en mediafråga skall användas.
+
+- Minst en kommentar skall finnas i CSS-filen (och den skall vara relevant).
+
+För väl godkänt krävs utöver ovan även:
+
+- id- och klassväljare skall användas på rätt vis, inte bara för att det går.
+Grid-layout skall användas för någon lämplig layout.
+
+- Inlämningen skall fungera bra för två olika designområden 
+- ("mobil" och "desktop").
+
+Färg skall anges på minst  tre olika sätt.
+
+Minst en pseudo-klass skall användas i en selektor.
+
+- Minst en bild skall vara SVG.
+
+- Alla dokument skall vara rimligt indenterade.
+
+- All HTML och CSS skall vara korrekta i enlighet med W3C:s validatorer.
+
+Inlämningen skall ske via Classroom och måste ske i tid. Behöver du komplettera din inlämning kan du endast
+få G.
+
+Inlämningen skall vara en zip-fil som har ditt namn som filnamn, "FörnamnEfternamn_Inl2.zip". Den skall
+innehålla din kod samt en README-fil där du beskriver inlämningen och övriga filer i din inlämning.

@@ -1,0 +1,163 @@
+@font-face {font-family: "Minercraftory Regular V1";
+    src: url("/resources/fonts/13cec26c4ae6a1debdce83db99ef411d.eot"); /* IE9*/
+    src: url("/resources/fonts/13cec26c4ae6a1debdce83db99ef411d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("/resources/fonts/13cec26c4ae6a1debdce83db99ef411d.woff2") format("woff2"),/* chrome、firefox */
+     url("/resources/fonts/13cec26c4ae6a1debdce83db99ef411d.woff") format("woff"), /*chrome、firefox */
+    url("/resources/fonts/13cec26c4ae6a1debdce83db99ef411d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("/resources/fonts/13cec26c4ae6a1debdce83db99ef411d.svg#Minercraftory Regular V1") format("svg"); /* iOS 4.1- */
+  }
+
+ :root {
+     --primary-color: rgb(64, 192, 214);
+     --secondary-color:rgba(199,102,1,1);
+ } 
+
+body{
+    background-color:var(--primary-color);
+    margin: 0px;
+    font-family: "Minercraftory Regular V1";
+    text-transform: capitalize;
+}
+
+ul {
+    margin: 0px;
+}
+
+/* .site-container {
+    background-color:paleturquoise;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+} */
+
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 280px 2fr;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: flex-end;
+}
+
+.logo-text{
+    font-size: 1.55em;
+    width: 30px;
+    padding: 0.72em;
+
+}
+.logo-text-p2 {
+    font-size: 1.7em;
+    margin-left: -60px;
+    color: var(--secondary-color);
+}
+
+
+#header-logo-img {    
+  
+    width: auto;
+    height: 85px;
+    margin: 16px 16px 0px -1px; 
+}
+
+
+.navigation-primary {
+    margin: 0px;
+}
+
+.navigation-list {
+    font-size: 1.85em;
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.navigation-item {
+    align-content: center;
+    padding: 0.2em;
+    margin-top: 0.3em;
+    margin-right: 0.3em;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color:black;
+}
+
+.navigation-item a:hover, 
+.game-mode-selector-list a:hover {
+    color: var(--secondary-color);
+}
+.main-container {
+    font-size: 1.2em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+
+.main-middle-container {
+    background-image: url("/resources/images/Background_scale_600x800.png");
+    margin: 10px auto 10px auto;
+    border: 3px solid #000000;
+    width: 600px;
+    height: 800px;
+    color:white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.high-score-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.high-score-title {
+    padding-bottom: 0.3em;
+}
+
+ .high-score-item {
+    padding-top: 0.3em;
+
+}
+.game-mode-info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-mode-info-mode {
+    font-size: 1.2em;
+    padding: 0.3em;
+}
+
+.game-mode-selector-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top:1.5em;
+}
+
+.game-mode-selector-list > li {
+    padding:15px;
+}
+
+.game-mode-selector-list a {
+    text-decoration: none;
+    color: white;
+}
+
+
