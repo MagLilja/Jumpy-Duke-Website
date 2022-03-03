@@ -110,6 +110,7 @@ ul {
     color:white;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: relative;
 }
 
 
@@ -131,16 +132,20 @@ ul {
     padding-top: 0.3em;
 
 }
-.game-mode-info{
-    margin-top: 15px;
+.game-box-title{
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.game-mode-info-mode {
+.game-box-title-row {
     font-size: 1.2em;
     padding: 0.3em;
 }
+
+.game-box-body {}
+
+.game-box-body-item {}
 
 .game-mode-selector-list {
     list-style-type: none;
@@ -164,6 +169,11 @@ ul {
 
 .lowerclouds {
     margin-bottom:-4px;
+}
+
+.cloud-animation-container {
+    position: absolute;
+    bottom: 0px;
 }
 
 
