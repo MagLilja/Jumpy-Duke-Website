@@ -6,31 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="utils.js"></script>
 </head>
 
 <body>
 
     <section class="site-container">
 
-        <header class="header">
-
-
-            <nav class="navigation-primary">
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                            <div class="logo-container">
-                                <img src="/resources/images/DukeOneHighres.png" alt="" id="logo-img">
-                                <span class="logo-text">Jumpy <span class="logo-text logo-text-p2">Duke</span></span>
-                            </div>
-                        </li>
-                        <li class="navigation-item"><a href="index.html">HOME</a></li>
-                        <li class="navigation-item"><a href="">HIGH SCORES</a></li>
-                        <li class="navigation-item"><a href="">DOWNLOAD GAME</a></li>
-                        <li class="navigation-item"><a href="">ABOUT</a></li>
-                        <li class="navigation-item"><a href="credits.html">CREDITS</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div include-html-module="header.html"></div>
 
         <main class="main-container">
             <!-- <div class="main-left-container"></div> -->
@@ -39,19 +22,19 @@
                     <span class="game-box-title-row">game mode</span>
                     <span class="game-box-title-row">Normal</span>
                 </div>
-                <ul class="high-score-list">
-                    <li class="high-score-title">high score</li>
-                    <li class="high-score-item">-------</li>
-                    <li class="high-score-item">Magnus - 23</li>
-                    <li class="high-score-item">Rayan - 17</li>
-                    <li class="high-score-item">Wille - 15</li>
-                    <li class="high-score-item">Eyvind - 12</li>
-                    <li class="high-score-item">Nora - 7</li>
-                    <li class="high-score-item">Wille - 15</li>
-                    <li class="high-score-item">Eyvind - 12</li>
-                    <li class="high-score-item">Nora - 7</li>
-                    <li class="high-score-item">Wille - 15</li>
-                    <li class="high-score-item">Eyvind - 12</li>
+                <ul class="game-box-body-list">
+                    <li class="game-box-body-title">high score</li>
+                    <li class="game-box-body-item">-------</li>
+                    <li class="game-box-body-item">Magnus - 23</li>
+                    <li class="game-box-body-item">Rayan - 17</li>
+                    <li class="game-box-body-item">Wille - 15</li>
+                    <li class="game-box-body-item">Eyvind - 12</li>
+                    <li class="game-box-body-item">Nora - 7</li>
+                    <li class="game-box-body-item">Wille - 15</li>
+                    <li class="game-box-body-item">Eyvind - 12</li>
+                    <li class="game-box-body-item">Nora - 7</li>
+                    <li class="game-box-body-item">Wille - 15</li>
+                    <li class="game-box-body-item">Eyvind - 12</li>
 
                 </ul>
                 <ul class="game-mode-selector-list">
@@ -71,5 +54,8 @@
     <!-- <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div> -->
 
 </body>
+<script>
+    includeHTML();
+</script>
 
 </html>

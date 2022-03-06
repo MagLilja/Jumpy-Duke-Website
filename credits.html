@@ -1,41 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="utils.js"></script>
 </head>
+
 <body>
     <section class="site-container">
+        <div include-html-module="header.html"></div>
 
-        <header class="header">
-
-
-            <nav class="navigation-primary">
-                <ul class="navigation-list">
-                    <li class="navigation-item">
-                            <div class="logo-container">
-                                <img src="/resources/images/DukeOneHighres.png" alt="" id="logo-img">
-                                <span class="logo-text">Jumpy <span class="logo-text logo-text-p2">Duke</span></span>
-                            </div>
-                        </li>
-                        <li class="navigation-item"><a href="index.html">HOME</a></li>
-                        <li class="navigation-item"><a href="">HIGH SCORES</a></li>
-                        <li class="navigation-item"><a href="">DOWNLOAD GAME</a></li>
-                        <li class="navigation-item"><a href="">ABOUT</a></li>
-                        <li class="navigation-item"><a href="credits.html">CREDITS</a></li>
-                </ul>
-            </nav>
-        </header>
 
         <main class="main-container">
-            <!-- <div class="main-left-container"></div> -->
             <div class="main-middle-container">
                 <div class="game-box-title">
                     <span class="game-box-title-row">Credits</span>
                 </div>
-                <ul class="high-score-list">
+                <ul class="game-box-body-list">
                     <li class="high-score-title">Designers & Coders</li>
                     <li class="game-box-body-item">-------</li>
                     <li class="game-box-body-item">Magnus Lilja</li>
@@ -46,13 +30,15 @@
 
                 <div class="cloud-animation-container">
                     <img src="/resources/images/Clouds_lower_600x181.png" alt="" class="lowerclouds">
-                    <!-- <img src="/resources/images/Clouds_lower_600x181.png" alt="" class="lowerclouds2"> -->
-                </div> 
+                </div>
             </div>
-            
-            <!-- <div class="main-right-container"></div> -->
         </main>
     </section>
-    
+
 </body>
+
+<script>
+    includeHTML();
+</script>
+
 </html>
