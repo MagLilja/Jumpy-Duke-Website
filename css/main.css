@@ -66,9 +66,8 @@ a {
 .navigation-item a:focus {
     padding: 0.2em 0px;
     margin: 0px;
-    border-width: 2px;
-    border-left-width: 0px;
-    border-style: solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     border-image: linear-gradient( to left, var(--primary-color), rgba(0, 0, 0, 0)) 30;
 }
 
