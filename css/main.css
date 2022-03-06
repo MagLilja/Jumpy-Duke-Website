@@ -64,8 +64,10 @@ a {
 
 .navigation-item a:hover,
 .navigation-item a:focus {
-    padding: 0.2em;
-    border-width: px;
+    padding: 0.2em 0px;
+    margin: 0px;
+    border-width: 2px;
+    border-left-width: 0px;
     border-style: solid;
     border-image: linear-gradient( to left, var(--primary-color), rgba(0, 0, 0, 0)) 30;
 }
