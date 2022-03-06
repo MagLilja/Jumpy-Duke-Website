@@ -1,4 +1,4 @@
-function includeHTML() {
+function includeHTMLModule() {
     var z, i, elmnt, file, xhttp;
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
