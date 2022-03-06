@@ -26,6 +26,7 @@ body {
 
 ul {
     margin: 0px;
+    padding: 0px;
 }
 
 a {
@@ -48,8 +49,9 @@ a {
     gap: 0.8rem;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     padding-bottom: 0.4em;
+    padding: 0.2em;
 }
 
 .navigation-item {
@@ -64,11 +66,13 @@ a {
 
 .navigation-item a:hover,
 .navigation-item a:focus {
-    padding: 0.2em 0px;
     margin: 0px;
-    border-top: 2px solid;
     border-bottom: 2px solid;
-    border-image: linear-gradient( to left, var(--primary-color), rgba(0, 0, 0, 0)) 30;
+    border-image: linear-gradient( to left, var(--primary-color), rgba(0, 0, 0, 0)) 1;
+}
+
+.navigation-item:first-child a:hover {
+    border: 0px;
 }
 
 .navigation-item a:hover,
@@ -78,37 +82,34 @@ a {
     text-shadow: var(--text-stroke);
 }
 
+.logo-item {
+    padding: 0px;
+}
+
 .logo-container {
     position: relative;
     width: 130px;
-    margin-bottom: 25px;
-    margin-left: 30px;
+    padding: 1.5rem;
 }
 
 #logo-img {
-    width: 60%;
+    width: 100px;
     position: absolute;
     top: -15px;
-    left: 32px;
+    left: 50px;
 }
 
-.logo-text {
+.logo-text-jumpy {
     display: block;
-    font-size: 16px;
+    font-size: 0.8rem;
 }
 
-.logo-text-p2 {
-    font-size: 32px;
+.logo-text-duke {
+    font-size: 2rem;
     text-shadow: var(--text-stroke);
     color: var(--secondary-color);
     position: absolute;
-    right: 80px;
-}
-
-@media screen and (max-width: 615px) {
-    .navigation-list {
-        font-size: 1.3em;
-    }
+    left: 15px;
 }
 
 .main-container {
@@ -129,6 +130,24 @@ a {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     position: relative;
     object-fit: cover;
+}
+
+@media screen and (max-width: 360px) {
+    .navigation-list {
+        font-size: 0.8em;
+    }
+    .navigation-item:first-child {
+        flex: 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-middle-container {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .logo-container {
+        margin-bottom: 1.2em;
+    }
 }
 
 .main-middle-container a:hover {}
