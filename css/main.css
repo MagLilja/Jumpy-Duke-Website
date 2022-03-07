@@ -229,3 +229,23 @@ a {
   bottom: 0px;
   z-index: 0;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.cpr-text {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.social-links {
+    align-items: center;
+}
+
+.social-links > svg {
+    height: 2rem;
+}
