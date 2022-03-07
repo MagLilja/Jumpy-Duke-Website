@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jumpy Duke</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="utils.js"></script>
 </head>
-<body>
 
-    
+<body>
+    <div class="site-container">
+
+        <header module-header="html-modules/header.html" class="header include-html-module-header"></header>
+
+        <main class="main-container">
+            <div class="main-middle-container">
+                <div class="game-box-title">
+                    <h2 class="game-box-title-row">jumpy duke</h2>
+                </div>
+                <ul class="game-box-body-list">
+                    <li class="game-box-body-title">This game and website was created as school project at YRGO - Java Enterprise Developer Higher Vocational Education.</li>
+                    <li class="game-box-body-title">The game is coded in Java.</li>
+                    <li class="game-box-body-title"><img src="resources/images/libgdx_logo.svg" alt="libgdx logotype"></li>
+                    <li class="game-box-body-title">It is built on the game development framework.</li>
+
+
+                </ul>
+
+                <div class="cloud-animation-container">
+                    <img src="resources/images/Clouds_lower_600x181.png" alt="" class="lowerclouds">
+                </div>
+            </div>
+        </main>
+
+        <footer module-footer="html-modules/footer.html"></footer>
+
+    </div>
+
+    <script>
+        includeHTMLModule("module-header");
+        includeHTMLModule("module-footer");
+    </script>
 </body>
+
 </html>
