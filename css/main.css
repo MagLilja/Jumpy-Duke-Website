@@ -155,6 +155,7 @@ a {
   .main-middle-container {
     width: 100%;
     font-size: 0.9em;
+    overflow: hidden;
   }
   .logo-container {
     margin-bottom: 1.2em;
