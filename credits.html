@@ -11,7 +11,7 @@
 
 <body>
     <div class="site-container">
-        <header module-header="html-modules/header.html" class="header include-html-module-header"></header>
+        <header data-header="html-modules/header.html" class="header include-html-module-header"></header>
         <main class="main-container">
             <div class="main-middle-container">
                 <div class="game-box-title">
@@ -29,12 +29,11 @@
                 </div>
             </div>
         </main>
-        <footer module-footer="html-modules/footer.html"></footer>
-
+        <footer data-footer="html-modules/footer.html"></footer>
     </div>
     <script>
-        includeHTMLModule("module-header");
-        includeHTMLModule("module-footer");
+        includeHTMLModule("data-header");
+        includeHTMLModule("data-footer");
     </script>
 </body>
 

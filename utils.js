@@ -1,30 +1,21 @@
 function includeHTMLModule(module) {
-    var z, i, elmnt, file, xhttp;
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        file = elmnt.getAttribute(module);
-        if (file) {
+    let htmlFileToInclude;
+    let xhttp;
+    let dataElements = document.querySelectorAll("header[data-header], footer[data-footer]");
+    for (let element of dataElements) {
+        htmlFileToInclude = element.getAttribute(module);
+        if (htmlFileToInclude) {
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4) {
-                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                    if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                    elmnt.removeAttribute(module);
-                    includeHTML();
+                    if (this.status == 200) { element.innerHTML = this.responseText; }
+                    if (this.status == 404) { element.innerHTML = "Page not found."; }
+                    element.removeAttribute(module);
                 }
             }
-            xhttp.open("GET", file, true);
+            xhttp.open("GET", htmlFileToInclude, true);
             xhttp.send();
             return;
         }
     }
 }
-
-$(function() {
-    var includes = $('[data-include]')
-    $.each(includes, function() {
-        var file = 'views/' + $(this).data('include') + '.html'
-        $(this).load(file)
-    })
-})
