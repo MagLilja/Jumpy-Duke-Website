@@ -4,7 +4,9 @@ RewriteEngine On
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
-
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+?)\.html$ /$1.php [L]
 
 ErrorDocument 400 /400.html
 ErrorDocument 401 /401.html
