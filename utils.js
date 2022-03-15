@@ -23,7 +23,7 @@ function includeHTMLModule(module) {
 
 // api url
 const api_url =
-    "https://jumpyduke.com/node-test/";
+    "https://jumpyduke.com/node-test/normal/";
 
 // Defining async function
 async function getapi(url) {
