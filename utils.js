@@ -37,7 +37,7 @@ async function getapi(url) {
     show(data);
 }
 // Calling that async function
-getapi(api_url);
+window.addEventListener('load', () => getapi(api_url));
 
 function show(data) {
     let ul =
