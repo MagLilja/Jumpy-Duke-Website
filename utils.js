@@ -19,3 +19,37 @@ function includeHTMLModule(module) {
         }
     }
 }
+
+
+// api url
+const api_url =
+    "https://jumpyduke.com/node-test/";
+
+// Defining async function
+async function getapi(url) {
+
+    // Storing response
+    const response = await fetch(url);
+
+    // Storing data in form of JSON
+    var data = await response.json();
+    console.log(data);
+    show(data);
+}
+// Calling that async function
+getapi(api_url);
+
+function show(data) {
+    let ul =
+        `<li class="game-box-body-title">high score</li>
+        <li class="game-box-body-item">-------</li>`;
+
+    // Loop to access all rows 
+    data
+        .forEach(element => {
+            ul += `<li class="game-box-body-item">${element.userName} - ${element.highScore}</li>
+       `
+        });
+    // Setting innerHTML as ul variable
+    document.getElementById("data-test").innerHTML = ul;
+}

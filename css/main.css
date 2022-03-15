@@ -10,6 +10,10 @@
     /* iOS 4.1- */
 }
 
+/*  ############
+    Variables
+    ############ */
+
 :root {
     --primary-font-color: rgb(219, 219, 219);
     --background-color: rgb(79, 116, 158);
@@ -17,6 +21,10 @@
     --secondary-color: rgba(199, 102, 1, 1);
     --text-stroke: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+/*  ############
+    Global styles
+    ############ */
 
 body {
     background-color: var(--background-color);
@@ -36,6 +44,10 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/*  ############
+    Global styles
+    ############ */
 
 .navigation-primary {
     margin-top: 0.8em;
