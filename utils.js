@@ -66,7 +66,7 @@ function show(data) {
     // Loop to access all rows 
     data
         .forEach(element => {
-            ul += `<li class="game-box-body-item">${element.userName} - ${element.highScore}</li>
+            ul += `<li class="game-box-body-item">${element.userName} - ${element.lastScore}</li>
        `
         });
     // Setting innerHTML as ul variable
