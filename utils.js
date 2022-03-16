@@ -45,9 +45,18 @@ async function getapi(url) {
 window.addEventListener('load', () => {
     // Calling that async function
     getapi(api_normal_url);
-    document.getElementById("show-easy").addEventListener("click", () => { getapi(api_easy_url); });
-    document.getElementById("show-normal").addEventListener("click", () => { getapi(api_normal_url); });
-    document.getElementById("show-hard").addEventListener("click", () => { getapi(api_hard_url); });
+    document.getElementById("show-easy").addEventListener("click", () => {
+        getapi(api_easy_url);
+        document.getElementById("game-mode").innerHTML = "easy";
+    });
+    document.getElementById("show-normal").addEventListener("click", () => {
+        getapi(api_normal_url);
+        document.getElementById("game-mode").innerHTML = "normal";
+    });
+    document.getElementById("show-hard").addEventListener("click", () => {
+        getapi(api_hard_url);
+        document.getElementById("game-mode").innerHTML = "hard";
+    });
 });
 
 function show(data) {
