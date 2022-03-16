@@ -20,15 +20,10 @@ function includeHTMLModule(module) {
     }
 }
 
+// api urls
 let api_normal_url = "https://jumpyduke.com/node-test/normal/";
 let api_easy_url = "https://jumpyduke.com/node-test/easy/";
 let api_hard_url = "https://jumpyduke.com/node-test/hard/";
-
-
-
-// api url
-
-
 
 // Defining async function
 async function getapi(url) {
@@ -45,10 +40,7 @@ async function getapi(url) {
 window.addEventListener('load', () => {
     // Calling that async function
     getapi(api_normal_url);
-    document.getElementById("show-easy").addEventListener("click", () => {
-        getapi(api_easy_url);
-        document.getElementById("game-mode").innerHTML = "easy";
-    });
+    swapScore();
     document.getElementById("show-normal").addEventListener("click", () => {
         getapi(api_normal_url);
         document.getElementById("game-mode").innerHTML = "normal";
@@ -57,6 +49,13 @@ window.addEventListener('load', () => {
         getapi(api_hard_url);
         document.getElementById("game-mode").innerHTML = "hard";
     });
+
+    function swapScore() {
+        document.getElementById("show-easy").addEventListener("click", () => {
+            getapi(api_easy_url);
+            document.getElementById("game-mode").innerHTML = "easy";
+        });
+    }
 });
 
 function show(data) {
