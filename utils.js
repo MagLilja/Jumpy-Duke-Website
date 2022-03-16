@@ -20,10 +20,15 @@ function includeHTMLModule(module) {
     }
 }
 
+let api_normal_url = "https://jumpyduke.com/node-test/normal/";
+let api_easy_url = "https://jumpyduke.com/node-test/easy/";
+let api_hard_url = "https://jumpyduke.com/node-test/hard/";
+
+
 
 // api url
-const api_url =
-    "https://jumpyduke.com/node-test/normal/";
+
+
 
 // Defining async function
 async function getapi(url) {
@@ -36,8 +41,14 @@ async function getapi(url) {
     console.log(data);
     show(data);
 }
-// Calling that async function
-window.addEventListener('load', () => getapi(api_url));
+
+window.addEventListener('load', () => {
+    // Calling that async function
+    getapi(api_normal_url);
+    document.getElementById("show-easy").addEventListener("click", () => { getapi(api_easy_url); });
+    document.getElementById("show-normal").addEventListener("click", () => { getapi(api_normal_url); });
+    document.getElementById("show-hard").addEventListener("click", () => { getapi(api_hard_url); });
+});
 
 function show(data) {
     let ul =
