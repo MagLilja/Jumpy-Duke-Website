@@ -23,6 +23,25 @@ https://github.com/MagLilja/Jumpy-Duke
 * This website connects to a Node.js Express API to get the highscores posted to the API from the Jumpy Duke Game. 
 * The api can be found at https://jumpyduke.com/node-test/
 
+### Project files
+
+Files in the project and their general purpose.
+
+- main.css - the main and only stylesheet. 
+- html-modules
+    - Footer.html and Header.html - Header and footer for reuse across the site.  
+- resources
+    - fonts - contains the font used on the website
+        - .eot .svg. .ttf .woff and .woff2 for all possible different needs. 
+    - images - contains all the images used on the website.
+- .htaccess - In this case used to force redirect to HTTPS
+- about.html - The about page
+- credits.html - The credits page
+- download.html - Page for download links to the game and links to GitHub
+- index.html - The index page and also the page for the high-scores. 
+- Utils.js - All the utility javascript for the site. 
+
+
 
 
 ## Authors
