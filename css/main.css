@@ -91,7 +91,7 @@ a:hover {
 
 .site-container {
     display: grid;
-    grid-template-columns: 1fr clamp(300px, 60vw, 600px) 1fr;
+    grid-template-columns: 1fr clamp(300px, 60vw, 500px) 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: ". header ." ". main ." ". footer .";
     align-items: start;
@@ -212,6 +212,17 @@ a:hover {
             Game Box
     ############################# */
 
+.game-box-title {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/resources/images/bugg.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    padding: 2em;
+}
+
 .game-box-body-list {
     list-style-type: none;
     margin: 0px;
@@ -228,13 +239,6 @@ a:hover {
     text-align: center;
     margin-left: 2em;
     margin-right: 2em;
-}
-
-.game-box-title {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .game-box-title-row {
@@ -255,6 +259,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding-top: 1.5em;
+    z-index: 10;
 }
 
 .game-box-mode-selector-list>li {
@@ -271,6 +276,27 @@ a:hover {
     position: absolute;
     bottom: -2px;
     right: 0px;
+    z-index: 2;
+}
+
+
+/*  ####### Layout styles #######
+            Game Box > Pipes
+    ############################# */
+
+.pipe-bottom-container {
+    position: absolute;
+    top: 45vh;
+    right: -65px;
+    z-index: 0;
+}
+
+.pipe-top-container {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 45vh;
+    right: -65px;
+    z-index: 1;
 }
 
 

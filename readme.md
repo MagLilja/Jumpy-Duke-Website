@@ -17,7 +17,8 @@ https://github.com/MagLilja/Jumpy-Duke
 * HTML for structure and hyperlinks
 * JavaScript for connection to the API (see below) and for Header and Footer modules. 
 * CSS for layout and design
-
+* Git and GitHub for source version control. 
+* Jenkins for deployment to server
 ### Dependencies
 
 * This website connects to a Node.js Express API to get the highscores posted to the API from the Jumpy Duke Game. 
