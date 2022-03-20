@@ -21,6 +21,7 @@ function includeHTMLModule(module) {
 }
 
 // api urls
+let api_url = "https://jumpyduke.com/node-test/";
 let api_normal_url = "https://jumpyduke.com/node-test/normal/";
 let api_easy_url = "https://jumpyduke.com/node-test/easy/";
 let api_hard_url = "https://jumpyduke.com/node-test/hard/";
@@ -38,24 +39,18 @@ async function getapi(url) {
 }
 
 window.addEventListener('load', () => {
-    // Calling that async function
-    getapi(api_normal_url);
-    swapScore();
-    document.getElementById("show-normal").addEventListener("click", () => {
-        getapi(api_normal_url);
-        document.getElementById("game-mode").innerHTML = "normal";
-    });
-    document.getElementById("show-hard").addEventListener("click", () => {
-        getapi(api_hard_url);
-        document.getElementById("game-mode").innerHTML = "hard";
-    });
+    // load normal as default
+    getapi(api_url + "normal");
+    // listen for score swaps
+    swapScore("easy");
+    swapScore("normal");
+    swapScore("hard");
 
-    function swapScore() {
-        document.getElementById("show-easy").addEventListener("click", () => {
-            getapi(api_easy_url);
-            document.getElementById("game-mode").innerHTML = "easy";
+    function swapScore(gameMode) {
+        document.getElementById("show-" + gameMode).addEventListener("click", () => {
+            getapi(api_url + gameMode);
         });
-    }
+    };
 });
 
 function show(data) {
@@ -66,8 +61,9 @@ function show(data) {
     // Loop to access all rows 
     data
         .forEach(element => {
-            ul += `<li class="game-box-body-item">${element.userName} - ${element.lastScore}</li>
-       `
+            if (element.lastScore > 0) {
+                ul += `<li class="game-box-body-item">${element.userName} - ${element.lastScore}</li>`
+            }
         });
     // Setting innerHTML as ul variable
     document.getElementById("data-test").innerHTML = ul;
