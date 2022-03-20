@@ -241,7 +241,11 @@ a:focus {
 }
 
 .game-box-body-item svg {
-    width: 7rem;
+    width: 4rem;
+}
+
+.game-box-body-item {
+    z-index: 5;
 }
 
 .game-box-mode-selector-list {
