@@ -16,35 +16,24 @@
         <main class="main-container">
             <div class="main-middle-container">
                 <div class="game-box-title">
-                    <h2 class="game-box-title-row">game mode</h2>
-                    <span id="game-mode" class="game-box-title-row">normal</span>
+                    <h2 class="game-box-title-row">pick game mode</h2>
+                    <ul class="game-box-mode-selector-list">
+                        <li><a id="show-easy" href="#">easy</a></li>
+                        <li><a id="show-normal" href="#">normal</a></li>
+                        <li><a id="show-hard" href="#">hard</a></li>
+                    </ul>
                 </div>
                 <ul class="game-box-body-list" id="data-test">
                     <li class="game-box-body-title">high score</li>
                     <li class="game-box-body-item">-------</li>
-
-
                 </ul>
-                <ul class="game-box-mode-selector-list">
-                    <li><a id="show-easy" href="#">easy</a></li>
-                    <li><a id="show-normal" href="#">normal</a></li>
-                    <li><a id="show-hard" href="#">hard</a></li>
-                </ul>
-                <div class="cloud-animation-container">
-                    <img src="resources/images/Clouds_lower_600x181.png" alt="" class="lowerclouds">
-                </div>
-                <div class="pipe-bottom-container">
-                    <img src="resources/images/Pipe_bottom_new_140x801.png" alt="" class="lowerclouds">
-                </div>
-                <div class="pipe-top-container">
-                    <img src="resources/images/Pipe_bottom_new_140x801.png" alt="" class="lowerclouds">
-                </div>
+                <img src="resources/images/Clouds_lower_600x181.png" alt="Low clouds" class="lowerclouds">
+                <img src="resources/images/Pipe_bottom_new_140x801.png" alt="" class="top_pipe">
+                <img src="resources/images/Pipe_bottom_new_140x801.png" alt="" class="bottom_pipe">
             </div>
         </main>
         <footer data-footer="html-modules/footer.html" class="footer"></footer>
     </div>
-
-    <table id="data-test"></table>
     <script>
         includeHTMLModule("data-header");
         includeHTMLModule("data-footer");

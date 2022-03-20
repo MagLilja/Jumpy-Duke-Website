@@ -52,5 +52,5 @@ All HTML och CSS skall vara korrekta i enlighet med W3C:s validatorer.
 Inlämningen skall ske via Classroom och måste ske i tid. Behöver du komplettera din inlämning kan du endast
 få G.
 
-Inlämningen skall vara en zip-fil som har ditt namn som filnamn, "FörnamnEfternamn_Inl2.zip". Den skall
+Inlämningen skall vara en zip-fil som har ditt namn som filnamn, "MagnusLilja_Inl2FörnamnEfternamn_Inl2.zip". Den skall
 innehålla din kod samt en README-fil där du beskriver inlämningen och övriga filer i din inlämning.
