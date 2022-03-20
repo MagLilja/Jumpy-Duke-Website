@@ -260,10 +260,6 @@ a:focus {
     z-index: 1;
 }
 
-.game-box-mode-selector-list a:active {
-    font-size: 1.2em;
-}
-
 
 /*  ####### Layout styles #######
             Game Box > Cloud
